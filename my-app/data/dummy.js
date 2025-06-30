@@ -1,0 +1,58 @@
+export const events = [
+  {
+    id: '1',
+    title: 'React Native Workshop',
+    date: '2025-07-01',
+    location: 'Online',
+    description: 'Learn React Native basics in this interactive workshop.',
+  },
+  {
+    id: '2',
+    title: 'Expo Introduction',
+    date: '2025-07-10',
+    location: 'New York',
+    description: 'Get started with Expo for faster React Native development.',
+  },
+  {
+    id: '3',
+    title: 'Advanced React Patterns',
+    date: '2025-07-15',
+    location: 'San Francisco',
+    description: 'Dive deep into advanced React design patterns and hooks.',
+  },
+  {
+    id: '4',
+    title: 'JavaScript ES2025 Features',
+    date: '2025-07-20',
+    location: 'Online',
+    description: 'Explore the newest features coming in ES2025 for JavaScript.',
+  },
+  {
+    id: '5',
+    title: 'UI/UX Design for Mobile Apps',
+    date: '2025-07-25',
+    location: 'Chicago',
+    description: 'Learn the fundamentals of mobile UI/UX design.',
+  },
+  {
+    id: '6',
+    title: 'State Management with Redux',
+    date: '2025-07-30',
+    location: 'Online',
+    description: 'Master Redux for managing complex app states.',
+  },
+  {
+    id: '7',
+    title: 'TypeScript for React Developers',
+    date: '2025-08-05',
+    location: 'Austin',
+    description: 'Add type safety to your React apps with TypeScript.',
+  },
+  {
+    id: '8',
+    title: 'Building Progressive Web Apps',
+    date: '2025-08-10',
+    location: 'Online',
+    description: 'Create fast and reliable PWAs for the web and mobile.',
+  },
+];
