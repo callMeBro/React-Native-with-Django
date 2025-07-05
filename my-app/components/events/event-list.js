@@ -7,10 +7,9 @@ import {
   View,
 } from 'react-native';
 
-import EventItem from '../../components/events/event-item.js'; // ✅ make sure the path is correct
-import { events } from '../../data/dummy'; // ✅ dummy data
+import EventItem from '../../components/events/event-item.js';
 
-const EventList = () => {
+const EventList = ({ events }) => {
   const [refreshing, setRefreshing] = useState(false);
 
   const onRefresh = () => {
@@ -34,7 +33,7 @@ const EventList = () => {
       <Text style={styles.heading}>Upcoming Events</Text>
       <FlatList
         data={events}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem}
         numColumns={2}
         columnWrapperStyle={styles.row}

@@ -1,18 +1,21 @@
-import { useNavigation } from '@react-navigation/native'; // <-- import this
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const EventItem = ({ event }) => {
-  const navigation = useNavigation(); // <-- fix typo here
+  const navigation = useNavigation();
 
   const handlePress = () => {
-    // Navigate to a screen, for example 'EventDetails', passing event id or details
     navigation.navigate('EventDetails', { eventId: event.id });
   };
 
   return (
     <TouchableOpacity style={styles.card} onPress={handlePress}>
-      <Text style={styles.title}>{event.title}</Text>
+      <Text style={styles.title}>{event.name}</Text>
       <Text style={styles.description}>{event.description}</Text>
+      <Image 
+        style={{ width: 100, height: 100 }}
+        source={{ uri: event.qr_code }}
+      />
     </TouchableOpacity>
   );
 };
